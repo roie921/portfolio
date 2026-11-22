@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Б. Хонгор · Портфолио</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef1fb;--card:#fff;--fg:#111a2e;--dim:#5d6780;--acc:#3b6df0;--line:#e6e9f4;--soft:#f3f5fc;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1020;--card:#131a2e;--fg:#e8ecf8;--dim:#98a3c0;--acc:#6b93ff;--line:#222c47;--soft:#192139}}
+:root[data-theme="dark"]{--bg:#0b1020;--card:#131a2e;--fg:#e8ecf8;--dim:#98a3c0;--acc:#6b93ff;--line:#222c47;--soft:#192139}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 Poppins,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;transition:background .3s,color .3s}
+.wrap{max-width:1040px;margin:0 auto;padding:16px}
+.sheet{background:var(--card);border-radius:20px;box-shadow:0 10px 40px rgba(30,50,120,.08);overflow:hidden}
+header{position:sticky;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;padding:16px 28px;background:var(--card);border-bottom:1px solid var(--line)}
+.logo{font-weight:700;color:var(--fg);text-decoration:none}
+nav{display:flex;gap:26px;align-items:center}
+nav a{color:var(--fg);text-decoration:none;font-size:14px;font-weight:500;padding:4px 0;border-bottom:2px solid transparent}
+nav a:hover,nav a.on{border-color:var(--acc)}
+.ic{background:var(--soft);border:0;color:var(--fg);width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:16px}
+#mb{display:none}
+section{padding:72px 40px}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:32px;align-items:center;min-height:460px}
+h1{font-size:clamp(34px,6vw,54px);line-height:1.2;margin:0 0 12px}h1 span{color:var(--acc)}
+.sub{color:var(--dim);margin:0 0 28px}
+.btn{display:inline-block;background:var(--acc);color:#fff;text-decoration:none;padding:11px 26px;border-radius:8px;font-weight:500;font-size:14px;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(59,109,240,.35)}
+.soc{display:flex;gap:14px;margin-top:36px}
+.soc a{width:38px;height:38px;border-radius:50%;background:var(--soft);display:grid;place-items:center;color:var(--fg);transition:.2s}
+.soc a:hover{background:var(--acc);color:#fff;transform:translateY(-3px)}
+.soc svg{width:18px;height:18px;fill:currentColor}
+.blob{position:relative;width:min(100%,360px);aspect-ratio:1;margin:0 auto;background:var(--acc);display:grid;place-items:center;overflow:hidden;animation:mo 9s ease-in-out infinite;border-radius:58% 42% 55% 45%/50% 55% 45% 50%}
+.blob img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.blob b{font-size:84px;color:#fff;font-weight:700}
+@keyframes mo{50%{border-radius:42% 58% 45% 55%/55% 45% 55% 45%}}
+h2{font-size:28px;margin:0 0 6px}.bar{width:44px;height:4px;background:var(--acc);border-radius:2px;margin-bottom:28px}
+.about p{max-width:640px;color:var(--dim);margin:0}
+.sk{display:flex;flex-wrap:wrap;gap:10px}
+.sk span{background:var(--soft);padding:8px 18px;border-radius:999px;font-size:14px;font-weight:500;transition:.2s}
+.sk span:hover{background:var(--acc);color:#fff;transform:translateY(-2px)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.w{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--card);transition:transform .25s,box-shadow .25s}
+.w:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(30,50,120,.14)}
+.th{height:130px;display:grid;place-items:center;font-size:42px;color:#fff;background-size:cover;background-position:center}
+.wb{padding:16px}.wb b{display:block;font-size:15px;line-height:1.4}.wb small{color:var(--dim)}
+.wb p{margin:8px 0 12px;font-size:14px;color:var(--dim);line-height:1.6}.wb a{color:var(--acc);font-size:14px;font-weight:500;margin-right:14px;text-decoration:none}
+.ct{display:grid;gap:12px;font-size:15px}.ct a{color:var(--fg);text-decoration:none}.ct a:hover{color:var(--acc)}.ct span{color:var(--dim);display:inline-block;width:76px}
+footer{text-align:center;color:var(--dim);font-size:13px;padding:22px;border-top:1px solid var(--line)}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.blob{animation:none}}
+@media (max-width:760px){
+ header{padding:12px 18px}.wrap{padding:0}.sheet{border-radius:0}
+ #mb{display:block}nav{position:absolute;top:100%;left:0;right:0;background:var(--card);flex-direction:column;gap:0;border-bottom:1px solid var(--line);display:none;align-items:stretch}
+ nav.open{display:flex}nav a{padding:14px 20px;border:0;border-top:1px solid var(--line)}
+ section{padding:48px 20px}.hero{grid-template-columns:1fr;text-align:center;min-height:0}.hero .blob{order:-1;width:min(70%,260px)}.soc{justify-content:center}
+}
+</style>
+</head>
+<body>
+<div class="wrap"><div class="sheet">
+<header>
+ <a class="logo" href="#home">Б. Хонгор</a>
+ <nav id="nav"><a href="#home">Нүүр</a><a href="#about">Миний тухай</a><a href="#skills">Ур чадвар</a><a href="#works">Бүтээл</a><a href="#contact">Холбоо барих</a></nav>
+ <div style="display:flex;gap:8px"><button class="ic" id="tg" aria-label="Dark / light горим">◐</button><button class="ic" id="mb" aria-label="Цэс">☰</button></div>
+</header>
+
+<section id="home" class="hero">
+ <div class="rv">
+  <h1>Сайн уу,<br>Би <span>Б. Хонгор</span></h1>
+  <p class="sub">СЭЗИС · 3 дугаар курс<br>Мэдээллийн системийн менежмент</p>
+  <a class="btn" href="#contact">Холбоо барих</a>
+  <div class="soc">
+   <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm5 3.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9zm0 2a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM17.3 5.8a1.1 1.1 0 110 2.2 1.1 1.1 0 010-2.2z"/></svg></a>
+   <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h2.5V4.5H14C11.5 4.5 10 6 10 8.5V10.5H7.5V14H10v7h3.5v-7h2.6l.5-3.5h-3.1V8.7c0-.5.2-.7.5-.7z"/></svg></a>
+   <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 00-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.600-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 015.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0012 .5z"/></svg></a>
+  </div>
+ </div>
+ <div class="blob rv"><b>Х</b><img src="assets/photo.jpg" alt="Б. Хонгор" onerror="this.remove()"></div>
+</section>
+
+<section id="about" class="about rv">
+ <h2>Миний тухай</h2><div class="bar"></div>
+ <p>СЭЗИС-д Мэдээллийн системийн менежментийн чиглэлээр суралцдаг 3 курсын оюутан. Шинэ зүйл сурч, багаараа үр дүнтэй ажиллах дуртай.</p>
+</section>
+
+<section id="skills" class="rv">
+ <h2>Ур чадвар</h2><div class="bar"></div>
+ <div class="sk"><span>Багаар ажиллах</span><span>Асуудал шийдвэрлэх</span><span>Мэдээлэл боловсруулах</span><span>Цагийн менежмент</span><span>Харилцаа</span><span>HTML · CSS</span><span>React Native</span></div>
+</section>
+
+<section id="works" class="rv">
+ <h2>Бүтээл</h2><div class="bar"></div>
+ <div class="grid" id="wg"></div>
+</section>
+
+<section id="contact" class="rv">
+ <h2>Холбоо барих</h2><div class="bar"></div>
+ <div class="ct">
+  <div><span>Утас</span><a href="tel:+97694294991">94294991</a></div>
+  <div><span>Имэйл</span><a href="mailto:b24fa1364@ufe.edu.mn">b24fa1364@ufe.edu.mn</a></div>
+  <div><span>Имэйл</span><a href="mailto:batjargalhongoroo151@gmail.com">batjargalhongoroo151@gmail.com</a></div>
+ </div>
+</section>
+<footer>© 2026 Б. Хонгор</footer>
+</div></div>
+<script>
+var P=[
+ {t:"Цахим номын сан",c:"ISA332 · Бизнесийн шинжилгээ",d:"“Ухаалаг цахим номын сан”: судалгаа, As-Is / To-Be процесс, системийн шаардлага.",g:"linear-gradient(135deg,#3b6df0,#7c3aed)",i:"📚",f:"isa332"},
+ {t:"Хог хаялдаг ангилах систем",c:"ISA331 · Системийн шинжилгээ",d:"Асуудал, AS-IS / TO-BE процесс болон шаардлагын шинжилгээ.",g:"linear-gradient(135deg,#10b981,#3b82f6)",i:"♻️",f:"isa331"},
+ {t:"“Та 5 настай хүүхдээс ухаантай юу?”",c:"SWM · Мобайл программчлал",d:"React Native мобайл аппын интерфэйс болон үндсэн ажиллагаа.",g:"linear-gradient(135deg,#ec4899,#f59e0b)",i:"📱",f:"swm-app"}
+];
+document.getElementById("wg").innerHTML=P.map(function(p){return '<div class="w"><div class="th" style="background-image:url(assets/'+p.f+'.png),'+p.g+'">'+p.i+'</div><div class="wb"><b>'+p.t+'</b><small>'+p.c+'</small><p>'+p.d+'</p><a href="assets/'+p.f+'.png" target="_blank" rel="noopener">Зураг</a><a href="assets/'+p.f+'.pdf" target="_blank" rel="noopener">PDF</a></div></div>'}).join("");
+var R=document.documentElement;
+function T(){var n=(R.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"))==="dark"?"light":"dark";R.setAttribute("data-theme",n);try{localStorage.setItem("theme",n)}catch(e){}}
+try{var s=localStorage.getItem("theme");if(s)R.setAttribute("data-theme",s)}catch(e){}
+document.getElementById("tg").onclick=T;
+var nv=document.getElementById("nav");
+document.getElementById("mb").onclick=function(){nv.classList.toggle("open")};
+nv.onclick=function(){nv.classList.remove("open")};
+var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.12});
+document.querySelectorAll(".rv").forEach(function(el){io.observe(el)});
+var ls=[].slice.call(nv.querySelectorAll("a")),so=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)ls.forEach(function(a){a.classList.toggle("on",a.getAttribute("href")==="#"+x.target.id)})})},{rootMargin:"-40% 0px -55% 0px"});
+document.querySelectorAll("section").forEach(function(s){so.observe(s)});
+</script>
+</body>
+</html>
