@@ -43,8 +43,8 @@ h2{font-size:28px;margin:0 0 6px}.bar{width:44px;height:4px;background:var(--acc
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
 .w{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--card);transition:transform .25s,box-shadow .25s}
 .w:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(30,50,120,.14)}
-.th{height:130px;display:grid;place-items:center;font-size:42px;color:#fff;background-size:cover;background-position:center}
-.wb{padding:16px}.wb b{display:block;font-size:15px;line-height:1.4}.wb small{color:var(--dim)}
+.th{position:relative;overflow:hidden;height:150px;display:grid;place-items:center;font-size:42px;color:#fff;background-size:cover;background-position:center}
+.th img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top}.wb{padding:16px}.wb b{display:block;font-size:15px;line-height:1.4}.wb small{color:var(--dim)}
 .wb p{margin:8px 0 12px;font-size:14px;color:var(--dim);line-height:1.6}.wb a{color:var(--acc);font-size:14px;font-weight:500;margin-right:14px;text-decoration:none}
 .ct{display:grid;gap:12px;font-size:15px}.ct a{color:var(--fg);text-decoration:none}.ct a:hover{color:var(--acc)}.ct span{color:var(--dim);display:inline-block;width:76px}
 footer{text-align:center;color:var(--dim);font-size:13px;padding:22px;border-top:1px solid var(--line)}
@@ -57,6 +57,8 @@ footer{text-align:center;color:var(--dim);font-size:13px;padding:22px;border-top
  section{padding:48px 20px}.hero{grid-template-columns:1fr;text-align:center;min-height:0}.hero .blob{order:-1;width:min(70%,260px)}.soc{justify-content:center}
 }
 </style>
+<script>function fb(i,n){var e=["png","jpg","jpeg","webp"],k=+(i.dataset.k||0)+1;if(k<e.length){i.dataset.k=k;i.src="assets/"+n+"."+e[k]}else i.remove()}
+</script>
 </head>
 <body>
 <div class="wrap"><div class="sheet">
@@ -72,12 +74,12 @@ footer{text-align:center;color:var(--dim);font-size:13px;padding:22px;border-top
   <p class="sub">СЭЗИС · 3 дугаар курс<br>ISM</p>
   <a class="btn" href="#contact">Холбоо барих</a>
   <div class="soc">
-   <a href="https://www.instagram.com/_khngrooo3/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm5 3.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9zm0 2a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM17.3 5.8a1.1 1.1 0 110 2.2 1.1 1.1 0 010-2.2z"/></svg></a>
-   <a href="https://www.facebook.com/b.hongor.179589/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h2.5V4.5H14C11.5 4.5 10 6 10 8.5V10.5H7.5V14H10v7h3.5v-7h2.6l.5-3.5h-3.1V8.7c0-.5.2-.7.5-.7z"/></svg></a>
-   <a href="https://github.com/roie921" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 00-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.600-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 015.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0012 .5z"/></svg></a>
+   <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm5 3.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9zm0 2a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM17.3 5.8a1.1 1.1 0 110 2.2 1.1 1.1 0 010-2.2z"/></svg></a>
+   <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h2.5V4.5H14C11.5 4.5 10 6 10 8.5V10.5H7.5V14H10v7h3.5v-7h2.6l.5-3.5h-3.1V8.7c0-.5.2-.7.5-.7z"/></svg></a>
+   <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 00-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.600-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 015.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0012 .5z"/></svg></a>
   </div>
  </div>
- <div class="blob rv"><b>Х</b><img src="assets/Main.jpg" alt="Б. Хонгор" onerror="this.remove()"></div>
+ <div class="blob rv"><b>Х</b><img src="assets/Main.png" alt="Б. Хонгор" onerror="fb(this,'Main')"></div>
 </section>
 
 <section id="about" class="about rv">
@@ -107,11 +109,11 @@ footer{text-align:center;color:var(--dim);font-size:13px;padding:22px;border-top
 </div></div>
 <script>
 var P=[
- {t:"Цахим номын сан",c:"ISA332 · Бизнесийн шинжилгээ",d:"“Ухаалаг цахим номын сан”: судалгаа, As-Is / To-Be процесс, системийн шаардлага.",g:"linear-gradient(135deg,#3b6df0,#7c3aed)",i:"📚",f:"isa332"},
- {t:"Хог хаялдаг ангилах систем",c:"ISA331 · Системийн шинжилгээ",d:"Асуудал, AS-IS / TO-BE процесс болон шаардлагын шинжилгээ.",g:"linear-gradient(135deg,#10b981,#3b82f6)",i:"♻️",f:"isa331"},
- {t:"“Та 5 настай хүүхдээс ухаантай юу?”",c:"SWM · Мобайл программчлал",d:"React Native мобайл аппын интерфэйс болон үндсэн ажиллагаа.",g:"linear-gradient(135deg,#ec4899,#f59e0b)",i:"📱",f:"swm-app"}
+ {t:"Цахим номын сан",c:"ISA332 · Бизнесийн шинжилгээ",d:"“Ухаалаг цахим номын сан”: судалгаа, As-Is / To-Be процесс, системийн шаардлага.",g:"linear-gradient(135deg,#3b6df0,#7c3aed)",i:"📚",img:"OnlineLibraryMain",pdf:"OnlineLibrary.pdf"},
+ {t:"Хог хаялдаг ангилах систем",c:"ReClean · Системийн шинжилгээ",d:"Асуудал, AS-IS / TO-BE процесс болон шаардлагын шинжилгээ.",g:"linear-gradient(135deg,#10b981,#3b82f6)",i:"♻️",img:"ReCleanMain",pdf:"ReClean.pdf"},
+ {t:"“Та 5 настай хүүхдээс ухаантай юу?”",c:"SWM · Мобайл программчлал",d:"React Native мобайл аппын интерфэйс болон үндсэн ажиллагаа.",g:"linear-gradient(135deg,#ec4899,#f59e0b)",i:"📱",img:"FiveAgeMain",pdf:"FiveAge.pdf"}
 ];
-document.getElementById("wg").innerHTML=P.map(function(p){return '<div class="w"><div class="th" style="background-image:url(assets/'+p.f+'.png),'+p.g+'">'+p.i+'</div><div class="wb"><b>'+p.t+'</b><small>'+p.c+'</small><p>'+p.d+'</p><a href="assets/'+p.f+'.png" target="_blank" rel="noopener">Зураг</a><a href="assets/'+p.f+'.pdf" target="_blank" rel="noopener">PDF</a></div></div>'}).join("");
+document.getElementById("wg").innerHTML=P.map(function(p){return '<div class="w"><div class="th" style="background:'+p.g+'">'+p.i+'<img src="assets/'+p.img+'.png" alt="'+p.t+'" onerror="fb(this,\''+p.img+'\')"></div><div class="wb"><b>'+p.t+'</b><small>'+p.c+'</small><p>'+p.d+'</p><a href="assets/'+p.pdf+'" target="_blank" rel="noopener">PDF харах</a></div></div>'}).join("");
 var R=document.documentElement;
 function T(){var n=(R.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"))==="dark"?"light":"dark";R.setAttribute("data-theme",n);try{localStorage.setItem("theme",n)}catch(e){}}
 try{var s=localStorage.getItem("theme");if(s)R.setAttribute("data-theme",s)}catch(e){}
